@@ -82,9 +82,8 @@ export default function CourseLayout({
   children: React.ReactNode;
   params: { languageId: string };
 }) {
-  // Use React.use to unwrap the params promise
-  const unwrappedParams = React.use(params);
-  const languageId = unwrappedParams.languageId;
+  // Access the languageId directly from params
+  const languageId = params.languageId;
   
   const pathname = usePathname();
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);

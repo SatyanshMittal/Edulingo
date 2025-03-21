@@ -77,10 +77,13 @@ const coursesData = {
   // Additional languages would be defined here
 };
 
-export default function CourseOverviewPage({ params }) {
-  // Use React.use to unwrap the params promise
-  const unwrappedParams = React.use(params);
-  const languageId = unwrappedParams.languageId;
+export default function CourseOverviewPage({ 
+  params 
+}: { 
+  params: { languageId: string } 
+}) {
+  // Access the languageId directly from params
+  const languageId = params.languageId;
   
   const router = useRouter();
   
