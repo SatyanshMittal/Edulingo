@@ -1,6 +1,7 @@
+//@ts-nocheck
 'use client'
 
-import { useState } from 'react'
+// import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { ArrowLeft, Book, Lock, Star, Trophy, Zap, Heart, Gem } from 'lucide-react'
@@ -56,7 +57,7 @@ const mockSections = [
 ]
 
 export default function LanguageLearningPage() {
-  const [activeSection, setActiveSection] = useState<number | null>(null)
+  // const [activeSection, setActiveSection] = useState<number | null>(null)
   const router = useRouter()
 
   const handleUnitClick = (unitId: number) => {

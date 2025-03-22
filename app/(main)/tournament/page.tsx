@@ -92,7 +92,7 @@ function TournamentCard({ tournament }: { tournament: Tournament }) {
             />
           </div>
           <DialogFooter>
-            <Button onClick={() => setIsModalOpen(false)} variant="outline">Cancel</Button>
+            <Button onClick={() => setIsModalOpen(false)} variant="primaryOutline">Cancel</Button>
             <Button onClick={handleStartQuiz} className="bg-blue-600">Start Quiz</Button>
           </DialogFooter>
         </DialogContent>
